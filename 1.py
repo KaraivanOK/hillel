@@ -1,1 +1,1 @@
-print("111      ")
+git init
