@@ -1,6 +1,6 @@
 import random  # Импортируем модуль random.
 
-print(len(set((([random.randint(0, 100) for i in range(0, 10)]) + ([random.randint(0, 5) for i in range(0, 10)])))))
+print(len(set((([random.randint(0, 100) for i in range(0, 10)]) + ([random.randint(0, 100) for i in range(0, 10)])))))
 # Генерируем два списка и объединяем их в один список.
 # С помощью функции set находим множество уникальных чисел в объединённом списке.
 # С помощью функции len находим количество элементов в множестве.
