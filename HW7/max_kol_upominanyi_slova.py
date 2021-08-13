@@ -2,7 +2,6 @@ text_1 = input("Введите ваше первое предложение: ")
 text_2 = input("Введите ваше второе предложение: ")
 text_3 = input("Введите ваше третье предложение: ")
 text = text_1 + ' ' + text_2 + ' ' + text_3
-print(text)
 # Все знаки препинания, а также перенос строки меняем на пробел.
 text = text.replace("\n", " ").replace(",", " ").replace(".", " ").replace("?", " ").replace("!", " ") \
     .replace(":", " ").replace(";", " ")
@@ -15,5 +14,8 @@ for word in words:
         words_dict[word] = words_dict[word] + 1
     else:
         words_dict[word] = 1
-print(words_dict)
-print(list(words_dict.keys())[list(words_dict.values()).index(max(dict.values(words_dict)))])
+# Создаём список из ключей словаря. Индексом для которого служит список из значений словаря. Индексом для списка
+# значений словаря служит максимальное значение. Если несколько ключей имеют максимальное значение(несколько слов
+# встречается максимальное количество раз), то выводим последнее слово. Для чего разворачиваем оба списка, т.к.
+# .index() возвращает положение первого искомого элемента.
+print((list(reversed(words_dict.keys())))[list(reversed(words_dict.values())).index(max(dict.values(words_dict)))])
