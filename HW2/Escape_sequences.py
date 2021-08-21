@@ -1,4 +1,5 @@
-from prettytable import PrettyTable  # подключаем библиотеку pretty table через Settings-Python Interpreter
+# подключаем библиотеку pretty table через Settings-Python Interpreter
+from prettytable import PrettyTable
 
 x = PrettyTable()
 # Первая колонка  с шапкой и данными.
