@@ -35,3 +35,4 @@ for j in range(M + 1):
         print("%4d" % massiv2[j][i], end=' ')
     print()
 print()
+print()
