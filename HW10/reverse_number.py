@@ -3,7 +3,7 @@ def reverse_it(n):
         return n  # выход из рекурсии
     d = n % 10
     r = reverse_it(n // 10)
-    dd = 1
+    dd = 1  # Количество вхождений в рекурсию.
     r2 = r
     if r2 > 10:
         r2 //= 10
