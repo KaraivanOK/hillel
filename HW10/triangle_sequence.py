@@ -13,11 +13,11 @@ def count_first(n):
     return count_first
 
 
-print("Ввод \n 2 ")
+print("Ввод: \n 2 ")
 print("Вывод:")
 count_first(2)
 print()
 print('-' * 10)
-print("Ввод \n 5 ")
+print("Ввод: \n 5 ")
 print("Вывод:")
 count_first(5)
