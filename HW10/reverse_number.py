@@ -1,4 +1,4 @@
-def reverse_it(n, i):
+def reverse_it(n, i=0):
     if n == 0:
         return i
     else:
@@ -8,4 +8,4 @@ def reverse_it(n, i):
 print("Ввод: \n 179 ")
 print('-' * 10)
 print("Вывод:")
-print(reverse_it(179, 0))
+print(reverse_it(179))
