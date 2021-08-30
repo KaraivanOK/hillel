@@ -1,2 +1,3 @@
-print('__init__hillel')
-from.func_module import *
+from .func_module import *
+from .sequence_sorting_module import *
+from .built_in_collections import *
