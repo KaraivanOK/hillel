@@ -1,7 +1,7 @@
 """модуль, в котором реализованны функции сортировки последовательностей."""
 
 # Список атрибутов, которые могут быть подключены.
-__all__ = ['triangle_sequence', 'without_00', 'reverse_it','func_sort_matrix']
+__all__ = ['triangle_sequence', 'without_00', 'reverse_it', 'func_sort_matrix']
 
 
 def triangle_sequence(n):
@@ -45,6 +45,7 @@ def reverse_it(n, i=0):
         return i
     else:
         return reverse_it(n // 10, i * 10 + n % 10)
+
 
 def func_sort_matrix(massiv, x):
     """Функция сортировки двухмерного списка МхМ (матрицы).
