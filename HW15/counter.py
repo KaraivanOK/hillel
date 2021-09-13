@@ -7,18 +7,31 @@ class Counter:
         self.end = end
 
     def increase(self):
-        # Применяем while, для цикличного вывода значений счётчика.
-        while True:
-            if self.start <= self.end:
-                print(self.start)
-                self.start += 1
+        if self.start < self.end:
+            self.start += 1
+            return 'Увеличили значение счётчика на 1: ', self.start
+        else:
+            return 'Вы достигли максимального значения:', self.start
 
-            else:
-                return 'Finish.'
+    def present_value(self):
+        return 'Текущее значение счётчика: ', self.start
 
 
 my_count = Counter()
-# В данном случае print выведет все значения счётчика, потому что в самом методе
-# есть цикл. Для одиночного вывода значения можно для каждого значения
-# прописывать print.
+print(my_count.present_value())
 print(my_count.increase())
+print(my_count.present_value())
+print(my_count.increase())
+print(my_count.present_value())
+print(my_count.increase())
+print(my_count.present_value())
+print(my_count.increase())
+print(my_count.present_value())
+print(my_count.increase())
+print(my_count.present_value())
+print(my_count.increase())
+print(my_count.present_value())
+print(my_count.increase())
+print(my_count.present_value())
+print(my_count.increase())
+print(my_count.present_value())
