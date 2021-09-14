@@ -30,19 +30,16 @@ class Group:
         for i in range(len(self.memlist)):
             info = self.memlist[i].student_info()
             print(info)
-        return ""
 
     def n_g(self):
         for i in range(len(self.memlist)):
             ng = self.memlist[i].name_grades()
             print(ng)
-        return ""
 
     def n_a(self):
         for i in range(len(self.memlist)):
             na = self.memlist[i].name_age()
             print(na)
-        return ''
 
 
 student1 = Student('Андрей Говорухи', 20, 10)
@@ -57,10 +54,12 @@ group.addmember(student3)
 
 print('Полная информация о группе:')
 print('{:<20} {} {}'.format('Name', 'Age', 'Grades'))
-print(group.getinfo())
+group.getinfo()
+print()
 print('Имена студентов группы и их оценки:')
 print('{:<20} {}'.format('Name', 'Grades'))
-print(group.n_g())
+group.n_g()
+print()
 print('Имена студентов группы и их возраст:')
 print('{:<20} {}'.format('Name', 'Age'))
-print(group.n_a())
+group.n_a()
